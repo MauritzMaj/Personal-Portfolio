@@ -16,6 +16,7 @@ h2 { font-size: 4rem;
 }
 header h3 {
     color:aliceblue;
+    margin-left: 5px;
 }
 
 h3 { font-size: 3rem;
@@ -41,19 +42,22 @@ body {
     text-align:left;
     background: #1c5a94;
     color: #fff;
-    background-image: url(/images/binary-code-banner-vector.jpg);
+    background-image: url(/Personal-Portfolio/images/binary-code-banner-vector.jpg);
     height: 200px;
     width: 100%;
-    margin-bottom: 110px;
+    margin-bottom: 100px;
     background-size: cover;
     background-position: center;
   }
+
+  
   
   .profile-pic {
 
     max-height: 80%;
     float: left;
     margin-left: 10px;
+    margin-top: 60px;
     outline: solid 8px rgb(54, 200, 205);
     
 
@@ -61,22 +65,28 @@ body {
   }
   nav {
     position:relative;
-    margin-top: -1.32rem;
+    margin-top: 7.6rem;
     margin-right: 0.1rem;
     padding-right: 40px;
     font-size:10rem bold;
     max-width: 100%;
+    min-height: 30px;
     background-color: #13293d;
     float: right;
     display: inline-flex;
+
   }
 
-  a:link {
+  nav a:link {
     text-decoration: none ;
     color: aliceblue;
     font: bolder;
     text-shadow: 1px 1px #000000;
     font-weight: 500;
+  }
+
+  nav a:visited {
+    color:aliceblue;
   }
 
   
@@ -85,7 +95,9 @@ body {
     flex-wrap: wrap;
     list-style-type: none;
     font-size: 20px;
-    margin-right: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 05px;
   }
   
 
@@ -95,14 +107,25 @@ body {
     flex-grow: 1;
     margin-left:  3rem;
     margin-right: 3rem;
+    padding-bottom: 5rem;
 
+  }
+
+  .about h3 {
+
+    margin-left: 18px;
   }
 
 .about p {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     width: 100%;
     margin: 20px;
-    text-align: left;
+    text-align: center;
+    font-size: 20px;
+    line-height: 2;
+    margin-bottom: 5rem;
     
 }
 
@@ -111,6 +134,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    padding-bottom: 5rem;
 
   
 }
@@ -124,8 +148,7 @@ body {
   
 }
 
-.card-column-other
-{
+.card-column-other{
     flex: 1 0 50%;
     padding: 0rem;
     transition: flex-basis 500ms linear;
@@ -146,13 +169,31 @@ body {
     
   }
 
+  .card a:link {
+    font-size: 30px;
+    color: #000000;
+    text-shadow: none;
+    font-weight: 800;
+    text-decoration: none;
+    
+  }
+
+  .card a::after{
+    font-size: 30px;
+    color: #000000;
+    text-shadow: none;
+    font-weight: 800;
+    text-decoration: none;
+  }
+
   .image {
-    object-fit: contain;
+    display: flex;
     max-width: 600px;
     position: relative;
-    padding-left: 22%;
-    padding-top: 3%;
+    margin-left: 16rem;
   }
+
+
   footer {
     width: 100%;
     bottom: 0;
@@ -165,7 +206,6 @@ body {
   
   
 
-  
   .card p {
     text-align: center;
     font-size: 1.5rem;
@@ -176,9 +216,20 @@ body {
   }
 
   .contact-info {
-    text-decoration: underline;
+    padding: 10px;
+    text-decoration: underline cornflowerblue;
+    line-height: 2.5em;
+    text-align: left;
+    margin-left: -6px
   }
   
+  .contact-info h4 {
+    font-size: 1.3rem;
+  }
+
+  footer h3 {
+    color: #fff;
+  }
   @media screen and (max-width: 768px) {
     main,
     nav,.project-section {
