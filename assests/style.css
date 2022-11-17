@@ -40,13 +40,13 @@ body {
   header {
     max-height: 100%;
     text-align:left;
-    background: #1c5a94;
+    background-color: #1c5a94;
     color: #fff;
-    background-image: url(/Personal-Portfolio/images/binary-code-banner-vector.jpg);
+    background-image:url(/Personal-Portfolio/images/binary-code-banner-vector.jpg);
     height: 200px;
     width: 100%;
     margin-bottom: 100px;
-    background-size: cover;
+    background-size:auto;
     background-position: center;
   }
 
@@ -116,6 +116,7 @@ body {
     margin-left: 18px;
   }
 
+
 .about p {
     display: flex;
     flex-wrap: wrap;
@@ -175,7 +176,10 @@ body {
     text-shadow: none;
     font-weight: 800;
     text-decoration: none;
-    
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+   
   }
 
   .card a::after{
@@ -184,17 +188,24 @@ body {
     text-shadow: none;
     font-weight: 800;
     text-decoration: none;
+    
   }
 
-  .image {
-    display: flex;
-    max-width: 600px;
+
+
+  a.image {
+    display: inline-flex;
+     flex: 0 0 100%;
+    max-width:600px;
     position: relative;
+    justify-content: center;
     margin-left: 16rem;
   }
 
 
+
   footer {
+    flex:0 0 100%;
     width: 100%;
     bottom: 0;
     padding: 20px;
@@ -230,9 +241,31 @@ body {
   footer h3 {
     color: #fff;
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 992px) {
     main,
-    nav,.project-section {
+    nav,.project-section, footer {
       flex-direction: column;
     }
+  .card-column-other {
+    
+    flex: 0 0 100%
+    max-width: 100%
   }
+
+  .card {
+    text-align: center;
+    flex:content;
+    align-content: space-around;
+     }
+
+   }
+
+    @media screen and (min-width: 993px) {
+      .image {max-width: 600px;
+        margin-left: 17rem;
+    
+
+      }
+    }
+
+ 
